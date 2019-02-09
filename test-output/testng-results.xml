@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39572" started-at="2019-02-05T17:58:36Z" finished-at="2019-02-05T17:59:15Z">
+  <suite name="Suite" duration-ms="61626" started-at="2019-02-06T03:03:27Z" finished-at="2019-02-06T03:04:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="39572" started-at="2019-02-05T17:58:36Z" finished-at="2019-02-05T17:59:15Z">
+    <test name="Test" duration-ms="61626" started-at="2019-02-06T03:03:27Z" finished-at="2019-02-06T03:04:29Z">
       <class name="TestCase.LoginPage_TestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCase.LoginPage_TestCase@204f30ec]" name="setup" is-config="true" duration-ms="31654" started-at="2019-02-05T23:28:36Z" finished-at="2019-02-05T23:29:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCase.LoginPage_TestCase@204f30ec]" name="setup" is-config="true" duration-ms="40586" started-at="2019-02-06T08:33:27Z" finished-at="2019-02-06T08:34:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validatelogin(java.lang.String, java.lang.String)[pri:0, instance:TestCase.LoginPage_TestCase@204f30ec]" name="validatelogin" duration-ms="1216" started-at="2019-02-05T23:29:14Z" data-provider="getlogindata" finished-at="2019-02-05T23:29:15Z">
+        <test-method status="PASS" signature="validatelogin(java.lang.String, java.lang.String)[pri:0, instance:TestCase.LoginPage_TestCase@204f30ec]" name="validatelogin" duration-ms="4702" started-at="2019-02-06T08:34:24Z" data-provider="getlogindata" finished-at="2019-02-06T08:34:29Z">
           <params>
             <param index="0">
               <value>
