@@ -7,7 +7,9 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
@@ -32,8 +34,13 @@ public class TestBase {
 		
 		if(browserName.equals("chrome")){
 			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
-			driver = new ChromeDriver(); 
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+			chromeOptions.addArguments("--headless");
+			driver = new ChromeDriver(chromeOptions);
+			
+			//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
+			//driver = new ChromeDriver(chromeOptions); 
 		}
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
