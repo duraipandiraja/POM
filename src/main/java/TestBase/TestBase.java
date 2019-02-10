@@ -36,7 +36,8 @@ public class TestBase {
 			//WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--headless");
+			chromeOptions.setBinary("C:\\Users\\DURAI\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			
 			
 			
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
