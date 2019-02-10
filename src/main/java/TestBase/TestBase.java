@@ -10,6 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class TestBase {
 	public static RemoteWebDriver driver;
@@ -28,7 +31,8 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");	
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){

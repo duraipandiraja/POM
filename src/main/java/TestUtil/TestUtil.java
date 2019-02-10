@@ -23,7 +23,7 @@ import TestBase.TestBase;
 
 public class TestUtil extends TestBase {
 	
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\DURAI\\Desktop\\POM\\PageObjectModel\\src\\main\\java\\TestData\\TestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "./TestData/TestData.xlsx";
 
 	public TestUtil() throws IOException {
 		super();
