@@ -22,7 +22,7 @@ public class TestBase {
 	{
 
 	 prop = new Properties();
-				FileInputStream ip = new FileInputStream("C:\\Users\\DURAI\\Desktop\\POM\\PageObjectModel\\src\\main\\java\\TestConfig\\config.properties");
+				FileInputStream ip = new FileInputStream("./properties/config.properties");
 				prop.load(ip);
 	}
 	
@@ -31,8 +31,8 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			WebDriverManager.chromedriver().setup();
-			//System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");	
+			//WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
