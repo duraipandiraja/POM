@@ -37,10 +37,10 @@ public class TestBase {
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");
-			driver = new ChromeDriver(chromeOptions);
 			
-			//System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
-			//driver = new ChromeDriver(chromeOptions); 
+			
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
+			driver = new ChromeDriver(chromeOptions); 
 		}
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
