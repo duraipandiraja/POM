@@ -36,7 +36,7 @@ public class TestBase {
 			//WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.setBinary("C:\\Users\\DURAI\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 			
 			
 			
