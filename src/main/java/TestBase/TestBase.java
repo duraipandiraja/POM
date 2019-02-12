@@ -41,6 +41,10 @@ public class TestBase {
 			
 			
 			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");	
+			
+			//System.setProperty("webdriver.chrome.driver","C:\\Users\\DURAI\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			
+			
 			driver = new ChromeDriver(chromeOptions); 
 		}
 		else if(browserName.equals("FF")){
@@ -50,8 +54,8 @@ public class TestBase {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
 	
