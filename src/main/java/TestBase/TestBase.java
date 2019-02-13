@@ -16,6 +16,8 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
+//TestBase
+
 public class TestBase {
 	public static RemoteWebDriver driver;
 	public static Properties prop;
@@ -36,7 +38,7 @@ public class TestBase {
 			//WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+			chromeOptions.setBinary("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe");
 			
 			
 			
