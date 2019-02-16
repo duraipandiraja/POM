@@ -27,8 +27,9 @@ public class LoginPage_TestCase extends TestBase {
 	@BeforeTest
 	public void setup() throws IOException, InterruptedException
 	{   
-		initialization();
+		new LoginPage_TestCase();
 		loginpage = new LoginPage(); 
+		initialization();		
 		util= new TestUtil();
 		 
 		 
